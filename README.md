@@ -1,4 +1,4 @@
-# 🗺️ City Events Finder
+# City Events Finder
 **INFO 520 – Data Communications | VCU Business**  
 **Instructor:** Promod Sreedharan
 
@@ -6,7 +6,7 @@ A cloud-native web app that aggregates upcoming city events from **3 external AP
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User (Browser)
@@ -24,7 +24,7 @@ Cloud Run Service  (auto-scaling, containerized)
 
 ---
 
-## 🚀 Quick Start (Local)
+## Quick Start (Local)
 
 ```bash
 # 1. Clone
@@ -44,7 +44,7 @@ python app.py
 
 ---
 
-## 🐳 Docker (Local Test)
+##  Docker (Local Test)
 
 ```bash
 docker build -t city-events-finder .
@@ -56,7 +56,7 @@ docker run -p 8080:8080 \
 
 ---
 
-## ☁️ GCP Deployment (Step-by-Step)
+##  GCP Deployment (Step-by-Step)
 
 ### Prerequisites
 - GCP project with billing enabled
@@ -150,7 +150,7 @@ curl http://<LB_IP>/health
 
 ---
 
-## 🔒 Security
+##  Security
 - API keys stored in **GCP Secret Manager** — never hardcoded
 - Docker image runs as non-root user
 - HTTPS-ready via Load Balancer SSL certificate
@@ -167,7 +167,7 @@ curl http://<LB_IP>/health
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 city-events-finder/
 ├── app.py              # Flask backend + HTML frontend
@@ -178,5 +178,5 @@ city-events-finder/
 
 ---
 
-## 🤖 GenAI Usage
+##  GenAI Usage
 Anthropic. (2026, April 13). *Build a City Events Finder Flask app with GCP Cloud Run and Load Balancer deployment* [Generative AI chat]. Claude (claude-sonnet-4-6). https://claude.ai
